@@ -1,0 +1,6 @@
+res://Node2D.cs
+res://MainGame.tscn
+res://character.tscn
+res://character.cs
+res://WorldHandler.cs
+res://CharacterHandler.cs

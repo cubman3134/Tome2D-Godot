@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1712014253
+icon.svg::CompressedTexture2D::695804351455445703::1712008971::1712008977::1::::<><>::
+MainGame.tscn::PackedScene::6886296786937416100::1712010064::0::1::::<><>::res://Node2D.cs
+Node2D.cs::CSharpScript::-1::1712009770::0::1::::<>Node2D<>::
+::res://Assets/::1712014247
+::res://Assets/Sprites/::1712014253
+Character.png::CompressedTexture2D::5131919825088911214::1712014244::1712014254::1::::<><>::
+::res://BusinessLogic/::1712012264
+::res://BusinessLogic/Server/::1712012419
+ServerMessageBL.cs::CSharpScript::-1::1712012419::0::1::::<><>::
+::res://Properties/::1712009936
+launchSettings.json::JSON::-1::1712010035::0::1::::<><>::
+::res://Talkers/::1712009770
+ServerTalker.cs::CSharpScript::-1::1712009770::0::1::::<><>::

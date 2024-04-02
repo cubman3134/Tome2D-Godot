@@ -1,0 +1,22 @@
+<Project Sdk="Godot.NET.Sdk/4.2.1">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net7.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonData">
+      <HintPath>C:\Users\cubma\source\TOME\CommonData\CommonData\bin\Debug\CommonData.dll</HintPath>
+    </Reference>
+    <Reference Include="Models">
+      <HintPath>C:\Users\cubma\source\TOME\Models\Models\bin\Debug\Models.dll</HintPath>
+    </Reference>
+    <Reference Include="TcpSharp">
+      <HintPath>C:\Users\cubma\source\TOME\TomeGame\TomeClient\bin\Debug\TcpSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="TomeClient">
+      <HintPath>C:\Users\cubma\source\TOME\TomeGame\TomeClient\bin\Debug\TomeClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
