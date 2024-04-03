@@ -22,8 +22,4 @@ D:\GODOTPROJECTS\TOME2D\.godot\mono\temp\obj\Debug\Tome2D.pdb
 D:\GODOTPROJECTS\TOME2D\.godot\mono\temp\obj\Debug\Tome2D.genruntimeconfig.cache
 D:\GODOTPROJECTS\TOME2D\.godot\mono\temp\obj\Debug\ref\Tome2D.dll
 D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\Models.dll
-D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\UnityEngine.CoreModule.dll
-D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\UnityEngine.SharedInternalsModule.dll
 D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\Models.pdb
-D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\UnityEngine.CoreModule.xml
-D:\GodotProjects\Tome2D\.godot\mono\temp\bin\Debug\UnityEngine.SharedInternalsModule.xml

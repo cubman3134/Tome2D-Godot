@@ -6,6 +6,9 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="CommonData">
       <HintPath>C:\Users\cubma\source\TOME\CommonData\CommonData\bin\Debug\CommonData.dll</HintPath>
     </Reference>

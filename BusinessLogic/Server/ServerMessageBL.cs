@@ -14,7 +14,7 @@ namespace Tome2D.BusinessLogic.Server
         {
             switch (message)
             {
-                case DisconnectServerMessage:
+                case DisconnectServerMessage ta:
                     break;
                 default:
                     break;

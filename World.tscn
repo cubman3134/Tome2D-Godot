@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs51g2pg6hxms"]
+
+[ext_resource type="Script" path="res://WorldHandler.cs" id="1_dlkbb"]
+[ext_resource type="PackedScene" uid="uid://c61fjqb80r4mr" path="res://character.tscn" id="2_n6e3o"]
+[ext_resource type="Script" path="res://CharacterHandler.cs" id="3_cxs7l"]
+[ext_resource type="Texture2D" uid="uid://cfd678art8fs5" path="res://Assets/Sprites/Character.png" id="4_asutt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dlkbb")
+
+[node name="Character" parent="." instance=ExtResource("2_n6e3o")]
+script = ExtResource("3_cxs7l")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(171, 75)
+texture = ExtResource("4_asutt")

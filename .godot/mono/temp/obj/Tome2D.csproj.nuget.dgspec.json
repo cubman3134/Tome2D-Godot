@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GodotProjects\\Tome2D\\Tome2D.csproj": {}
+    "D:\\GODOTPROJECTS\\TOME2D\\Tome2D.csproj": {}
   },
   "projects": {
-    "D:\\GodotProjects\\Tome2D\\Tome2D.csproj": {
+    "D:\\GODOTPROJECTS\\TOME2D\\Tome2D.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GodotProjects\\Tome2D\\Tome2D.csproj",
+        "projectUniqueName": "D:\\GODOTPROJECTS\\TOME2D\\Tome2D.csproj",
         "projectName": "Tome2D",
-        "projectPath": "D:\\GodotProjects\\Tome2D\\Tome2D.csproj",
+        "projectPath": "D:\\GODOTPROJECTS\\TOME2D\\Tome2D.csproj",
         "packagesPath": "C:\\Users\\cubma\\.nuget\\packages\\",
-        "outputPath": "D:\\GodotProjects\\Tome2D\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\GODOTPROJECTS\\TOME2D\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -56,6 +56,10 @@
             "GodotSharpEditor": {
               "target": "Package",
               "version": "[4.2.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
