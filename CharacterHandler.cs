@@ -19,19 +19,19 @@ public partial class CharacterHandler : WorldHandler
         float yMovement = 0f;
         if (Input.IsKeyPressed(Key.W))
         {
-            yMovement += 1f;
+            yMovement -= 1f;
         }
         if (Input.IsKeyPressed(Key.S))
         {
-            yMovement -= 1f;
+            yMovement += 1f;
         }
         if (Input.IsKeyPressed(Key.D))
         {
-            xMovement -= 1f;
+            xMovement += 1f;
         }
         if (Input.IsKeyPressed(Key.A))
         {
-            xMovement += 1f;
+            xMovement -= 1f;
         }
         if (xMovement != 0f || yMovement != 0f)
         {

@@ -1,3 +1,4 @@
-res://World.tscn
 res://CharacterHandler.cs
 res://WorldHandler.cs
+res://Nodes/World.tscn
+res://Nodes/Ground.tscn

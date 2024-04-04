@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Godot;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Tome2D
 {
     public class ActiveEntities
     {
+        public static Node ActiveScene { get; set; }
+
         public static WorldHandler World { get; set; }
         public static CharacterHandler Character { get; set; }
     }

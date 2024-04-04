@@ -1,4 +1,5 @@
 using Godot;
+using Models.Game;
 using Models.Game.Server;
 using Models.Game.Server.Player;
 using Newtonsoft.Json;
@@ -18,7 +19,8 @@ public partial class WorldHandler : Godot.Node2D
 	public override void _Ready()
 	{
         ActiveEntities.World = this;
-		ServerTalker = new ServerTalker();
+        ActiveEntities.ActiveScene = GetTree().CurrentScene;
+        ServerTalker = new ServerTalker();
 		ServerTalker.OnDataReceived += Client_OnDataReceived;
         bool successfullyConnected = ServerTalker.Connect(out string errorString);
         if (ServerTalker.Connected)
@@ -36,16 +38,12 @@ public partial class WorldHandler : Godot.Node2D
 
 	}
 
-    public void Test()
-    {
-
-    }
-
     private void Client_OnDataReceived(object sender, TcpSharp.OnClientDataReceivedEventArgs e)
     {
         var data = Encoding.UTF8.GetString(e.Data);
         var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto, TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full };
-        var deserializedBaseMessage = Newtonsoft.Json.JsonConvert.DeserializeObject(data, settings);
+        var deserializedMessage = Newtonsoft.Json.JsonConvert.DeserializeObject(data, settings);
+        ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
         //Type messageType = deserializedBaseMessage?.ServerMessageType ?? typeof(ServerMessageBase);
         //var deserializedMessage = JsonSerializer.Deserialize(data, messageType) ?? new object();
         //ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
