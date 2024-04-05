@@ -1,0 +1,5 @@
+D:\GodotProjects\Tome2D\.godot\mono\temp\obj\ExportRelease\Tome2D.csproj.AssemblyReference.cache
+D:\GodotProjects\Tome2D\.godot\mono\temp\obj\ExportRelease\Tome2D.GeneratedMSBuildEditorConfig.editorconfig
+D:\GodotProjects\Tome2D\.godot\mono\temp\obj\ExportRelease\Tome2D.AssemblyInfoInputs.cache
+D:\GodotProjects\Tome2D\.godot\mono\temp\obj\ExportRelease\Tome2D.AssemblyInfo.cs
+D:\GodotProjects\Tome2D\.godot\mono\temp\obj\ExportRelease\Tome2D.csproj.CoreCompileInputs.cache

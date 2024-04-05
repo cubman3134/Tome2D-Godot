@@ -21,15 +21,11 @@ public partial class WorldHandler : Godot.Node2D
         ActiveEntities.World = this;
         ActiveEntities.ActiveScene = GetTree().CurrentScene;
         ServerTalker = new ServerTalker();
-		ServerTalker.OnDataReceived += Client_OnDataReceived;
-        bool successfullyConnected = ServerTalker.Connect(out string errorString);
         if (ServerTalker.Connected)
         {
-            ChunkPlayerMessage message = new ChunkPlayerMessage() { XLocation = 0, YLocation = 0 };
-            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto, TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full };
-            var jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(message, typeof(object), settings);
-            ServerTalker.SendString(jsonString);
+            
         }
+        ServerMessageBL.SendRequestToServer(Tome2D.Enums.RequestMessageTypes.RefreshLocalMap);
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -37,16 +33,4 @@ public partial class WorldHandler : Godot.Node2D
 	{
 
 	}
-
-    private void Client_OnDataReceived(object sender, TcpSharp.OnClientDataReceivedEventArgs e)
-    {
-        var data = Encoding.UTF8.GetString(e.Data);
-        var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto, TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full };
-        var deserializedMessage = Newtonsoft.Json.JsonConvert.DeserializeObject(data, settings);
-        ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
-        //Type messageType = deserializedBaseMessage?.ServerMessageType ?? typeof(ServerMessageBase);
-        //var deserializedMessage = JsonSerializer.Deserialize(data, messageType) ?? new object();
-        //ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
-        Console.WriteLine(data);
-    }
 }

@@ -11,6 +11,7 @@ public partial class CharacterHandler : WorldHandler
     public override void _Ready()
     {
         ActiveEntities.Character = this;
+        
     }
 
     public void HandleInput(double delta)
