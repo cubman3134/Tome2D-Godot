@@ -13,15 +13,12 @@ using Tome2D.Talkers;
 
 public partial class WorldHandler : Godot.Node2D
 {
-	public ServerTalker ServerTalker { get; set; }
-
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
         ActiveEntities.World = this;
         ActiveEntities.ActiveScene = GetTree().CurrentScene;
-        ServerTalker = new ServerTalker();
-        if (ServerTalker.Connected)
+        if (ServerTalker.Instance.Connected)
         {
             
         }

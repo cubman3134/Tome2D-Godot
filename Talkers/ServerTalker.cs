@@ -20,7 +20,10 @@ namespace Tome2D.Talkers
             var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto, TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Full };
             var deserializedMessage = Newtonsoft.Json.JsonConvert.DeserializeObject(data, settings);
             var response = ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
-
+            if (response != null)
+            {
+                SendMessage(response);
+            }
             //Type messageType = deserializedBaseMessage?.ServerMessageType ?? typeof(ServerMessageBase);
             //var deserializedMessage = JsonSerializer.Deserialize(data, messageType) ?? new object();
             //ServerMessageBL.ProcessServerMessage((ServerMessageBase)deserializedMessage);
